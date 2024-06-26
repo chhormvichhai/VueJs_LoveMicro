@@ -9,6 +9,8 @@ import AddNewClient from '@/views/client/AddNewClientView.vue'
 import UpdateClientInfo from '@/views/client/UpdateClientnfo.vue'
 import AllLandTitle from '@/views/landTitle/AllLandTitleView.vue'
 import UpdateLandTitle from '@/views/landTitle/UpdateLandTitleView.vue'
+import AllAccount from '@/views/account/AllAccountView.vue'
+import AccountDetail from '@/views/account/AccountDetailView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -63,6 +65,17 @@ const router = createRouter({
       path: '/landtitle/update/:id',
       name: 'landTitle-update',
       component: UpdateLandTitle
+    },
+    
+    {
+      path: '/account',
+      name: 'all-account',
+      component: AllAccount
+    },
+    {
+      path: '/account/:id',
+      name: 'account-detail',
+      component: AccountDetail
     },
     
   ]

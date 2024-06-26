@@ -44,8 +44,9 @@ watch(searchText, (newText) => {
             </RouterLink></li>
       <li><RouterLink :to="{name:'all-client-info'}">Clients</RouterLink></li>
       <li><RouterLink :to="{name:'all-landTitles'}">LandTitles</RouterLink></li>
+      <li><RouterLink :to="{name:'all-account'}">Accounts</RouterLink></li>
   
-      <li><a>Account</a></li>
+     
     </ul>
   </div>
 </div>
