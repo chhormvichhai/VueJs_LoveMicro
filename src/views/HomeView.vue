@@ -1,21 +1,23 @@
 <script setup>
-import UserLayout  from './layout/UserLayout.vue';
+import UserLayout from './layout/UserLayout.vue';
 import CEO from '@/assets/ceo.jpg'
+import Smile from '@/assets/icon/smile.svg'
 </script>
 
 <template>
-
-<UserLayout>
-
-  <div class="hero min-h-screen bg-base-200">
-  <div class="hero-content flex-col lg:flex-row">
-    <img :src="CEO" class="max-w-sm rounded-lg shadow-2xl" />
-    <div>
-      <h1 class="text-7xl font-bold">Love Microfinance RGB</h1>
-    
+  <UserLayout>
+    <div class="hero min-h-[500px]">
+      <div class="hero-content flex-col lg:flex-row mt-[150px]">
+        <!-- <img :src="IconHome" class="max-w-sm rounded-lg shadow-2xl" /> -->
+        <img :src="CEO" class="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+          <h1 class="text-7xl font-bold flex ">Love Microfinance RGB
+            <sup>
+              <img :src="Smile" class="w-6 h-6 mt-[20px]" />
+            </sup>
+          </h1>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</UserLayout>
-
+  </UserLayout>
 </template>

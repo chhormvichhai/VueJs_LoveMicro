@@ -8,7 +8,6 @@ const route = useRoute()
 const test = ref('')
 const landTitleInfo = reactive(
     {
-
         "type": "លិខិតផ្ទេរសិទ្ធ",
         "confirmBy": "ចៅសង្កាត់",
         "firstOwner": "kkk",
@@ -30,27 +29,17 @@ onMounted(async () => {
     landTitleInfo.address = landTitleStore.landTitle.address
     landTitleInfo.accountId = landTitleStore.landTitle.accountId
     landTitleInfo.accountName = landTitleStore.landTitle.accountName
-
-
 })
 const updateLandTitle = async () => {
-
     try {
         console.log("try to upddate")
         await landTitleStore.updateLandTitle(route.params.id, landTitleInfo)
-
-
     } catch (error) {
         console.log('error ', error)
     }
-
 }
-
 </script>
-
 <template>
-
-
     <UserLayout>
         <div role="tablist" class="tabs tabs-boxed">
             <a role="tab" class="tab">Loan History</a>
@@ -100,15 +89,8 @@ const updateLandTitle = async () => {
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                     </label>
                 </div>
-
-
             </div>
-
-
-
-
             <button @click="updateLandTitle()" class="btn btn-info">Save</button>
         </div>
     </UserLayout>
-
 </template>
