@@ -10,7 +10,6 @@
       <slot></slot>
     </div>
   </div>
-   
 </template>
 
 <style scoped>
